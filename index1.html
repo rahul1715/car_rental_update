@@ -64,29 +64,29 @@
            <div class="carousel-inner">
                <div class="item active">
                    <!-- Set the first background image using inline CSS below. -->
-                   <div class="fill" style="background-image:url('http://www.marchettidesign.net/demo/optimized-bootstrap/code.jpg');"></div>
+                   <div class="fill" style="background-image:url('images/benz.jpeg');"></div>
                    <div class="carousel-caption">
-                        <h2 class="animated fadeInLeft">Caption Animation</h2>
-                        <p class="animated fadeInUp">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <p class="animated fadeInUp"><a href="#" class="btn btn-transparent btn-rounded btn-large">Learn More</a></p>
+                        <h2 class="animated fadeInLeft" style="color:#ba9f0b" > Mercedes Benz</h2>
+                        <p class="animated fadeInUp" style="color:#ba9f0b">Book Car For Your Special Day.</p>
+                        <p class="animated fadeInUp"><a href="#contact" class="btn btn-transparent btn-rounded btn-large">Book Now </a></p>
                    </div>
                </div>
                <div class="item">
                    <!-- Set the second background image using inline CSS below. -->
-                   <div class="fill" style="background-image:url('http://www.marchettidesign.net/demo/optimized-bootstrap/conference.jpg');"></div>
+                   <div class="fill" style="background-image:url( 'images/benz11.jpeg');"></div>
                    <div class="carousel-caption">
-                        <h2 class="animated fadeInDown">Caption Animation</h2>
-                        <p class="animated fadeInUp">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <p class="animated fadeInUp"><a href="#" class="btn btn-transparent btn-rounded btn-large">Learn More</a></p>
+                        <h2 class="animated fadeInDown" style="color:#ba9f0b"> Mercedes Benz</h2>
+                        <p class="animated fadeInUp" style="color:#ba9f0b">Book Car For Your Special Day.</p>
+                        <p class="animated fadeInUp"><a href="#contact" class="btn btn-transparent btn-rounded btn-large">Book Now </a></p>
                    </div>
                </div>
                <div class="item">
                    <!-- Set the third background image using inline CSS below. -->
-                   <div class="fill" style="background-image:url('http://www.marchettidesign.net/demo/optimized-bootstrap/campus.jpg');"></div>
+                   <div class="fill" style="background-image:url('images/benz9.jpeg');"></div>
                    <div class="carousel-caption">
-                        <h2 class="animated fadeInRight">Caption Animation</h2>
-                        <p class="animated fadeInRight">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <p class="animated fadeInRight"><a href="#" class="btn btn-transparent btn-rounded btn-large">Learn More</a></p>
+                        <h2 class="animated fadeInRight" style="color:#ba9f0b"> Mercedes Benz</h2>
+                        <p class="animated fadeInRight" style="color:#ba9f0b">Book Car For Your Special Day.</p>
+                        <p class="animated fadeInRight"><a href="#contact" class="btn btn-transparent btn-rounded btn-large">Book Now </a></p>
                    </div>
                </div>
            </div>
@@ -199,7 +199,45 @@ We at C2C Venture Pvt LTd Car Marriage Rental just know how important weddings m
     </div>
   </div>
   <!-- client say-->
+  <div class='centerplease'>
+   FAQ accordion
+ </div>
+ <br>
 
+ <div class="content">
+ <div>
+   <input type="checkbox" id="question1" name="q"  class="questions">
+   <div class="plus">+</div>
+   <label for="question1" class="question">
+     This is the question that will be asked?
+   </label>
+   <div class="answers">
+     <p style="color:red">What if the answer is really long and wraps the whole page and you never want to finish it but you have to because its the answer!
+   </p></div>
+ </div>
+
+ <div>
+   <input type="checkbox" id="question2" name="q" class="questions">
+   <div class="plus">+</div>
+   <label for="question2" class="question">
+     Short?
+   </label>
+   <div class="answers">
+     short!
+   </div>
+ </div>
+
+ <div>
+   <input type="checkbox" id="question3" name="q" class="questions">
+   <div class="plus">+</div>
+   <label for="question3" class="question">
+     But what if the question is really long and wraps the whole page and you feel like you will never finish reading the question?
+   </label>
+   <div class="answers">
+     This is the answer!
+   </div>
+ </div>
+ </div>
 </section>
 
 <!--
@@ -327,6 +365,16 @@ We at C2C Venture Pvt LTd Car Marriage Rental just know how important weddings m
 $('#myCarousel').carousel({
    interval: 3000,
 })
+</script>
+<script>
+var $title = $('.js-title');
+var copy   = '.js-copy';
+
+$title.click(function () {
+  $(this).next(copy).slideToggle();
+  $(this).parent().siblings().children().next().slideUp();
+  return false;
+});
 </script>
     <script src="js/gal1.js"></script>
 
